@@ -16,8 +16,9 @@ Defined how the project's exterior wall performance is established. The drawings
 two construction series: **W1** (insulated concrete, effective R15) on the stair walls and the
 level-1 garbage room, and **W3b** (steel-stud wall with exterior insulation, effective R22)
 elsewhere. Opaque exterior wall and door areas are extracted with the envelope tool, grouped by
-**space type and construction**, giving the Stair and Garbage-Room exterior wall areas and the total
-exterior wall area. These are cross-checked against the EnergyPlus **Conditioned Window-Wall Ratio**
+**space type, construction and level**, giving the Stair and Garbage-Room exterior wall areas and the
+total exterior wall area. These are cross-checked against the EnergyPlus **Conditioned Window-Wall
+Ratio**
 table; after adjusting for door area the areas match exactly, which then makes the area-weighted
 average wall performance straightforward to compute.
 
