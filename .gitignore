@@ -1,0 +1,3 @@
+# The keyword index is a derived artifact — never back it up.
+*.sqlite3
+*.sqlite3.corrupt-*
