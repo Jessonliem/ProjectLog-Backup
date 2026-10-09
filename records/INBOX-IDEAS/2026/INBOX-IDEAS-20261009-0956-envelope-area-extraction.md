@@ -8,7 +8,8 @@
 - People: Not provided
 - Source: User dictation, 2026-10-09
 - Status: Recorded
-- Utilization: Not used
+- Updated: 2026-10-09 10:04 — implemented as skill "envelope-area-extractor" (C:\EnergySim-Workspace\MySkills\envelope-area-extractor); space type resolved from a user-supplied zone→space-type mapping CSV
+- Utilization: Used — built as skill "envelope-area-extractor"; reads eplustbl.htm / eplusout.sql, groups by construction × space type
 
 ## Summary
 
@@ -42,6 +43,10 @@ robust to schema/format differences across projects.
 
 ## Follow-up
 
-- Prototype extraction from one sample report (HTML and/or SQL) and confirm the available fields.
-- Define the grouping keys and output format (e.g. construction × space type area table).
-- Decide the Skill + scripts structure and how it is invoked.
+- ~~Prototype extraction from one sample report (HTML and/or SQL) and confirm the available fields.~~
+  Done 2026-10-09: verified on `...\Proposed V4\eplustbl.htm` and `eplusout.sql`.
+- ~~Define the grouping keys and output format (e.g. construction × space type area table).~~
+  Done 2026-10-09: construction → space type table with kind/area_m2/gross_m2/count.
+- ~~Decide the Skill + scripts structure and how it is invoked.~~
+  Done 2026-10-09: `envelope-area-extractor` skill with `scripts/extract_envelope.py`.
+- Provide the real zone → space-type mapping CSV (currently an example map is used).
