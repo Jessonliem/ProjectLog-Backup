@@ -9,6 +9,7 @@
 - Source: User dictation, 2026-10-09
 - Status: Recorded
 - Updated: 2026-10-09 09:51 — idea lifecycle decided (used / not used, no closing state); see INBOX-IDEAS-20261009-0951-idea-lifecycle
+- Updated: 2026-10-09 09:53 — newsletter split into its own project (AIX-NEWS) and moved to the workspace root; see INBOX-IDEAS-20261009-0953-newsletter-spun-off
 
 ## Summary
 
@@ -18,7 +19,8 @@ intent is to have one place that holds every raw idea and every piece of newslet
 with this project log acting as the managed layer over it so that nothing is lost and each item
 can be searched, tracked, and developed.
 
-The folder currently mixes two kinds of material:
+At the time of this record the folder mixed two kinds of material (the newsletter was later split
+out into its own project on 2026-10-09):
 
 - Flat, standalone idea notes at the top level — tool and script concepts (Excel/parameter
   extraction, gbXML window adjustment/migration, LPD and infiltration checks, SimParametric DSL,
@@ -41,7 +43,8 @@ log, ideas and newsletter fragments are hard to retrieve, prioritise, or carry f
 is intended to give each item a citable record and a status.
 
 Open question: whether the newsletter should eventually be split into its own dedicated project
-(and log) or stay a sub-area of `INBOX-IDEAS`.
+(and log) or stay a sub-area of `INBOX-IDEAS`. — Resolved 2026-10-09: split into its own project
+`AIX-NEWS` (see INBOX-IDEAS-20261009-0953-newsletter-spun-off).
 
 ## Basis and evidence
 
@@ -58,5 +61,6 @@ Open question: whether the newsletter should eventually be split into its own de
   Resolved 2026-10-09: ideas have only "used" / "not used" states (see
   INBOX-IDEAS-20261009-0951-idea-lifecycle).
 - Decide how newsletter issues map to records (one record per issue? per thought seed?).
-- Decide whether the newsletter becomes its own project/log later.
+- ~~Decide whether the newsletter becomes its own project/log later.~~ Resolved 2026-10-09:
+  newsletter is now its own project `AIX-NEWS`.
 - Capture each existing idea and newsletter issue as an individual record over time.

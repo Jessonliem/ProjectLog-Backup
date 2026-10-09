@@ -15,11 +15,20 @@
       "name": "Inbox Ideas",
       "aliases": [
         "Idea Inbox",
-        "Ideas",
-        "AI x Engineering Newsletter",
-        "Newsletter"
+        "Ideas"
       ],
       "record_dir": "C:/EnergySim-Workspace/Inbox Ideas/ProjectLog"
+    },
+    {
+      "id": "AIX-NEWS",
+      "name": "AI x Engineering Newsletter",
+      "aliases": [
+        "AI × Engineering",
+        "AI × Engineering Newsletter",
+        "AIxEngineering",
+        "Newsletter"
+      ],
+      "record_dir": "C:/EnergySim-Workspace/AI x Engineering Newsletter/ProjectLog"
     }
   ]
 }
