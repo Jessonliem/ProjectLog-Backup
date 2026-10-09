@@ -8,6 +8,7 @@
 - People: Not provided
 - Source: User dictation, 2026-10-09
 - Status: Recorded
+- Updated: 2026-10-09 09:51 — idea lifecycle decided (used / not used, no closing state); see INBOX-IDEAS-20261009-0951-idea-lifecycle
 
 ## Summary
 
@@ -53,7 +54,9 @@ Open question: whether the newsletter should eventually be split into its own de
 
 ## Follow-up
 
-- Define how an "idea" graduates through stages (captured → developed → produced/archived).
+- ~~Define how an "idea" graduates through stages (captured → developed → produced/archived).~~
+  Resolved 2026-10-09: ideas have only "used" / "not used" states (see
+  INBOX-IDEAS-20261009-0951-idea-lifecycle).
 - Decide how newsletter issues map to records (one record per issue? per thought seed?).
 - Decide whether the newsletter becomes its own project/log later.
 - Capture each existing idea and newsletter issue as an individual record over time.
