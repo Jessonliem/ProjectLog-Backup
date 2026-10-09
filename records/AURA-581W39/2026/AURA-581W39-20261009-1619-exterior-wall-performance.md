@@ -6,9 +6,9 @@
 - Type: Analysis
 - Keywords: Exterior Wall Performance, Effective R-value, Insulated Concrete Wall, Steel Stud Wall, W1, W3, Stair, Garbage Room, Opaque Envelope, Net Wall Area, Conditioned Window-Wall Ratio, Area-Weighted Average, Door Area
 - People: Not provided
-- Source: User dictation; EnergyPlus tabular report and extracted opaque/door areas (see body)
+- Source: User dictation; EnergyPlus HTML report and generated workbook (paths in Basis and evidence)
 - Status: Recorded
-- Updated: 2026-10-09 16:23 — clarified that the single model construction is a deliberate simplification (area-weighted average + thermal bridging) and that the parkade (AP) level is excluded
+- Updated: 2026-10-09 16:28 — added the source report and generated workbook paths (earlier: clarified the single-construction simplification + thermal bridging and the parkade exclusion)
 
 ## Summary
 
@@ -38,6 +38,9 @@ average wall performance straightforward to compute.
 
 ## Basis and evidence
 
+- Source report: `C:\Project Others\Project XT 2026\Aura_581 W39 Ave Vancouver\Model v2\Proposed V4 TB11.9 infil1.2.htm`
+- Generated result: `...\Model v2\Proposed V4 TB11.9 infil1.2.envelope-pivots.xlsx` (sheets: `Envelope Ratios`,
+  `Opaque Exterior`, five pivot tables).
 - Construction series (from the drawings): `W1f` insulated concrete, eff R15, stair wall all levels;
   `W1e` insulated concrete, eff R15, level-1 garbage room and stair; `W3b` steel-stud wall with
   exterior insulation, eff R22.
