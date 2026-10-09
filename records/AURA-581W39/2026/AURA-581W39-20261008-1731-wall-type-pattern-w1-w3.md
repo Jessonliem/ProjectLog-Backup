@@ -8,6 +8,7 @@
 - People: Not provided
 - Source: User dictation
 - Status: Recorded
+- Updated: 2026-10-09 16:23 — linked to the exterior wall performance record
 
 ## Summary
 
@@ -25,6 +26,7 @@ Established the wall type pattern for the project and confirmed that envelope pe
 
 - User dictation describing the wall schedule pattern.
 - Relates to the pending envelope item for the Ground Floor Garbage Room / Bedroom partition: `AURA-581W39-20261008-1730-garbage-bedroom-partition`.
+- Related: `AURA-581W39-20261009-1619-exterior-wall-performance` (uses the W1/W3 pattern to define the exterior wall performance area basis).
 - Missing evidence: the wall-type schedule / assembly details (U-values, layers) for W1 and W3 were not provided.
 
 ## Follow-up

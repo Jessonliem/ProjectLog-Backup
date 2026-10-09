@@ -8,6 +8,7 @@
 - People: Not provided
 - Source: User dictation; EnergyPlus tabular report and extracted opaque/door areas (see body)
 - Status: Recorded
+- Updated: 2026-10-09 16:23 — clarified that the single model construction is a deliberate simplification (area-weighted average + thermal bridging) and that the parkade (AP) level is excluded
 
 ## Summary
 
@@ -22,30 +23,35 @@ average wall performance straightforward to compute.
 
 ## Decision, assumption, or concern
 
-- **W1 (eff R15)** = stair exterior wall (all levels) + level-1 garbage room; **W3b (eff R22)** = the
-  remaining exterior wall.
+- **W1 (eff R15)** = stair exterior wall (all levels, above ground) + level-1 garbage room;
+  **W3b (eff R22)** = the remaining above-ground exterior wall.
 - The Conditioned Window-Wall Ratio table **excludes door area**, and the extracted opaque **net wall
   area also excludes doors**; the comparison must be adjusted for this before it is valid.
 - After the adjustment the area calculation is an exact match — the extraction is verified.
-- The model names its above-ground wall construction `PROJECT WALL R11.9` (single construction), so
-  the W1/W3 split is applied by **space type**, not by construction name.
+- The model's single above-ground wall construction is a **deliberate simplification, not an error**:
+  the drawing's different wall types were **area-weighted-averaged**, **thermal bridging** was then
+  applied, and that single effective construction was input to the model (hence `PROJECT WALL R11.9`
+  vs the drawing's W3b eff R22).
+- **Parking level (AP) is excluded**: only above-ground levels are considered, and the parkade stair
+  wall is uninsulated (not part of W1). Grouping used **space type + construction + level**.
 
 ## Basis and evidence
 
 - Construction series (from the drawings): `W1f` insulated concrete, eff R15, stair wall all levels;
   `W1e` insulated concrete, eff R15, level-1 garbage room and stair; `W3b` steel-stud wall with
   exterior insulation, eff R22.
-- Extracted exterior wall (category WALL), **gross** areas: total **1698.27 m²**
-  (≈ E+ Gross Wall Area 1698.30), **Stair (StawG) 194.39 m²**, **Garbage 24.11 m²**; net wall
-  1456.00 m².
+- Above-ground exterior wall (category WALL, excluding the parkade level), **gross** total
+  **1341.35 m²** (E+ Above Ground Wall Area; model gross 1341.32). Including the parkade, total gross
+  is 1698.27 m² (≈ E+ Gross Wall Area 1698.30).
+- Above-ground **Stair (StawG) 184.89 m²**, **Garbage 24.11 m²**; the parkade stair wall (9.50 m²,
+  uninsulated) is excluded.
 - Door adjustment: exterior door area 18.53 m²; see `AURA-581W39-20261009-1600-envelope-area-reconciliation`.
 - Related: `AURA-581W39-20261008-1731-wall-type-pattern-w1-w3` (W1/W3 wall-type pattern).
-- Provisional area-weighted R (gross areas, W1 = stair + garbage): (218.50×15 + 1479.77×22) / 1698.27
-  ≈ **21.1** — confirm the W1/W3 boundary and weighting basis before using.
+- The model value already reflects the area-weighted average plus thermal bridging, so no separate
+  weighting is needed to reproduce it; recomputing from the drawing areas is a cross-check.
 
 ## Follow-up
 
-- Confirm whether the parkade stair wall (9.50 m², uninsulated parkade construction) belongs to W1.
 - Confirm the effective R values and whether to weight by gross or above-ground wall area.
-- Reconcile the model's `PROJECT WALL R11.9` naming against the drawing's W3b eff R22.
-- Compute and record the final area-weighted exterior wall performance.
+- Recompute the area-weighted exterior wall performance from the drawing wall areas as a cross-check
+  against the model's single-construction value.

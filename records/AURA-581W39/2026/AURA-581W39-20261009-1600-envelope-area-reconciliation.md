@@ -8,6 +8,7 @@
 - People: Not provided
 - Source: EnergyPlus tabular report and the generated pivot workbook (see body); user dictation
 - Status: Recorded
+- Updated: 2026-10-09 16:23 — linked to the exterior wall performance record
 
 ## Summary
 
@@ -29,6 +30,8 @@ reproduced from the pivot, which has no conditioning dimension.
 - Reconciliation: gross 1341.32 = net 1099.05 + windows 223.93 + doors 18.53 (per-row rounding);
   window-only net = 1341.32 − 223.93 = 1117.39 ≈ E+ 1117.6.
 - Conditioned Window-Wall Ratio net wall = 1070.9 m² (Above Ground Wall Area 1294.65).
+- Related: `AURA-581W39-20261009-1619-exterior-wall-performance` (uses this reconciliation's door
+  adjustment to derive the exterior wall performance area basis).
 
 ## Decision, assumption, or concern
 
