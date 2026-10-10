@@ -7,8 +7,9 @@
 - Keywords: Exterior Wall Performance, Effective R-value, Insulated Concrete Wall, Steel Stud Wall, W1, W3, Stair, Garbage Room, Opaque Envelope, Net Wall Area, Conditioned Window-Wall Ratio, Area-Weighted Average, Door Area
 - People: Not provided
 - Source: User dictation; EnergyPlus HTML report and generated workbook (paths in Basis and evidence)
-- Status: Recorded
+- Status: Completed
 - Updated: 2026-10-09 16:28 — added the source report and generated workbook paths (earlier: clarified the single-construction simplification + thermal bridging and the parkade exclusion)
+- Updated: 2026-10-10 15:41 — closed both follow-up actions per user instruction
 
 ## Summary
 
@@ -56,6 +57,6 @@ average wall performance straightforward to compute.
 
 ## Follow-up
 
-- Confirm the effective R values and whether to weight by gross or above-ground wall area.
-- Recompute the area-weighted exterior wall performance from the drawing wall areas as a cross-check
-  against the model's single-construction value.
+- [x] Confirm the effective R values and whether to weight by gross or above-ground wall area. — Completed: 2026-10-10; Result: Closed per user instruction.
+- [x] Recompute the area-weighted exterior wall performance from the drawing wall areas as a cross-check
+  against the model's single-construction value. — Completed: 2026-10-10; Result: Closed per user instruction.

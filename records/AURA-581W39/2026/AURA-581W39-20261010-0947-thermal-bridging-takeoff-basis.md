@@ -7,7 +7,8 @@
 - Keywords: thermal bridging, balcony, slab edge, door sill, door head, structural thermal break, W3b, envelope, Psi value
 - People: Not provided
 - Source: User dictation; SimWinMTBtakeoff_report.xlsx; TBTakeoff V3.xlsx; thermalenvelope.ca thermal data sheets
-- Status: Recorded
+- Status: Completed
+- Updated: 2026-10-10 15:41 — closed the follow-up action per user instruction
 
 ## Summary
 
@@ -79,4 +80,4 @@ The 5.2 series supports a no-break slab-root magnitude of about 0.45, but its sl
 
 ## Follow-up
 
-- Confirm the door sill and thermal break product, then re-check the door-sill and door-head Psi values (catalog references are sliding doors; project is a low-threshold swing door).
+- [x] Confirm the door sill and thermal break product, then re-check the door-sill and door-head Psi values (catalog references are sliding doors; project is a low-threshold swing door). — Completed: 2026-10-10; Result: Closed per user instruction.

@@ -7,8 +7,9 @@
 - Keywords: thermal bridging, Psi value, baseline, clear field, window-wall, curb, intermediate floor, BC Housing
 - People: Not provided
 - Source: User dictation; thermalenvelope.ca detail 9.1.3 data sheet; BC Housing Thermal Bridging at Balconies and Doors Guide
-- Status: Recorded
+- Status: Completed
 - Updated: 2026-10-10 14:18 — added Chinese companion section (non-indexed) for readability
+- Updated: 2026-10-10 15:41 — closed the follow-up entry per user instruction (no action)
 
 ## Summary
 
@@ -38,4 +39,4 @@ The resolution: **Psi is a difference, but you must first ask "relative to what 
 
 ## Follow-up
 
-- None. (This note may later be migrated to a dedicated learning-notes area.)
+- [x] None. (This note may later be migrated to a dedicated learning-notes area.) — Completed: 2026-10-10; Result: No action required.

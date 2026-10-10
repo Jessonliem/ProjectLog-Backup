@@ -7,8 +7,9 @@
 - Keywords: fan power, SFP, specific fan power, PTAC, PTHP, DesignBuilder, EnergyPlus, HRV, ERV, variable-speed fan, fan laws, UnitarySystem, VRF, effective average fan power
 - People: Not provided
 - Source: User-provided memo `C:\Project Others\Project XT 2026\Aura_581 W39 Ave Vancouver\01 Calculation\4. Mechanical\Equipment_YYYYMMDD\Fan power simulation.md`
-- Status: Recorded
+- Status: Completed
 - Updated: 2026-10-10 14:18 — added Chinese companion section (non-indexed) for readability
+- Updated: 2026-10-10 15:41 — closed the follow-up action per user instruction
 
 ## Summary
 
@@ -81,4 +82,4 @@ If the project uses DB's native PTAC / PTHP template (or to control modeling com
 
 ## Follow-up
 
-- Confirm the actual low/med/high speed power and airflow values once equipment is finalized, and re-check the effective SFP.
+- [x] Confirm the actual low/med/high speed power and airflow values once equipment is finalized, and re-check the effective SFP. — Completed: 2026-10-10; Result: Closed per user instruction.

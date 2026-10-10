@@ -7,8 +7,9 @@
 - Keywords: thermal bridging, Psi value, balcony, slab edge, clear field, spandrel panel, double counting, full-height model, floor-to-ceiling glazing, BC Housing, 9.1.3, 9.1.19, 9.1.21, 9.1.26
 - People: Not provided
 - Source: User-provided learning note `C:\Users\jesso\Downloads\Balcony_Slab_Edge_Psi_Learning_Notes.md`; BC Building Envelope Thermal Bridging Guide; BC Housing 2024 guide; ThermalEnvelope.ca data sheets
-- Status: Recorded
+- Status: Completed
 - Updated: 2026-10-10 14:18 — added Chinese companion section (non-indexed) for readability
+- Updated: 2026-10-10 15:41 — closed both follow-up entries per user instruction
 
 Units: all linear thermal transmittance Psi values are Btu/(h·ft·°F); all area U-values are Btu/(h·ft²·°F).
 
@@ -89,5 +90,5 @@ It is not accurate to say the guide "does not explain at all": the *Dealing with
 
 ## Follow-up
 
-- Consider migrating learning records to a dedicated learning-notes area (Obsidian vault) in the future.
-- Related records: `AURA-581W39-20261010-0947-thermal-bridging-takeoff-basis`, `AURA-581W39-20261010-0959-psi-baseline-window-wall-curb`.
+- [x] Consider migrating learning records to a dedicated learning-notes area (Obsidian vault) in the future. — Completed: 2026-10-10; Result: Closed per user instruction.
+- [x] Related records: `AURA-581W39-20261010-0947-thermal-bridging-takeoff-basis`, `AURA-581W39-20261010-0959-psi-baseline-window-wall-curb`. — Completed: 2026-10-10; Result: Informational; relation already recorded in the body.

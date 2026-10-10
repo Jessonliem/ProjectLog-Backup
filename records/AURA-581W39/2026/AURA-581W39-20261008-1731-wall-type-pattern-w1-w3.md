@@ -7,8 +7,9 @@
 - Keywords: Wall Type, W1, W3, Wall Schedule, Building Envelope, Envelope Performance, Garbage Room, Stair, North Stair, Exterior Wall, Ground Floor
 - People: Not provided
 - Source: User dictation
-- Status: Recorded
+- Status: Completed
 - Updated: 2026-10-09 16:23 — linked to the exterior wall performance record
+- Updated: 2026-10-10 15:41 — closed both follow-up actions per user instruction
 
 ## Summary
 
@@ -31,5 +32,5 @@ Established the wall type pattern for the project and confirmed that envelope pe
 
 ## Follow-up
 
-- Confirm the W1 and W3 assembly definitions (insulation, layers, U-value) against the wall schedule.
-- Verify the W1 assignment (Garbage Room exterior wall and North Stair exterior wall on each floor) matches the drawings.
+- [x] Confirm the W1 and W3 assembly definitions (insulation, layers, U-value) against the wall schedule. — Completed: 2026-10-10; Result: Closed per user instruction.
+- [x] Verify the W1 assignment (Garbage Room exterior wall and North Stair exterior wall on each floor) matches the drawings. — Completed: 2026-10-10; Result: Closed per user instruction.

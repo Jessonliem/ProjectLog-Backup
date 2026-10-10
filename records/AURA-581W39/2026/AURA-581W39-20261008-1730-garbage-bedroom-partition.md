@@ -7,7 +7,9 @@
 - Keywords: Building Envelope, Envelope Performance, Garbage Room, Bedroom, Partition Wall, Insulation, Exterior Wall Assembly, Unconditioned Space, Heating Demand, Ground Floor
 - People: Not provided
 - Source: User dictation
-- Status: Open
+- Status: Completed
+- Related-Records: AURA-581W39-20261010-1541-garbage-unit-insulation-confirm
+- Updated: 2026-10-10 15:41 — items consolidated into AURA-581W39-20261010-1541-garbage-unit-insulation-confirm; all follow-ups closed per user instruction
 
 ## Summary
 
@@ -26,6 +28,6 @@ On the ground floor, the wall between the **Garbage Room** and the **Bedroom** i
 
 ## Follow-up
 
-- Confirm the construction assembly for the Ground Floor Garbage Room / Bedroom wall.
-- Verify the garbage room conditioning status and design temperature to establish the correct envelope boundary and U-value.
-- Once confirmed, update the energy model envelope and zoning accordingly.
+- [x] Confirm the construction assembly for the Ground Floor Garbage Room / Bedroom wall. — Completed: 2026-10-10; Result: Consolidated into AURA-581W39-20261010-1541-garbage-unit-insulation-confirm (insulation confirmation now tracked there).
+- [x] Verify the garbage room conditioning status and design temperature to establish the correct envelope boundary and U-value. — Completed: 2026-10-10; Result: Consolidated into AURA-581W39-20261010-1541-garbage-unit-insulation-confirm.
+- [x] Once confirmed, update the energy model envelope and zoning accordingly. — Completed: 2026-10-10; Result: Closed; to be actioned once the insulation is confirmed in AURA-581W39-20261010-1541-garbage-unit-insulation-confirm.

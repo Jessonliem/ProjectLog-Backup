@@ -7,8 +7,9 @@
 - Keywords: Building Envelope, Opaque Area, Exterior Wall, Window-Wall Ratio, Net Wall Area, Door Area, Above Ground Wall Area, Area Reconciliation
 - People: Not provided
 - Source: EnergyPlus tabular report and the generated pivot workbook (see body); user dictation
-- Status: Recorded
+- Status: Completed
 - Updated: 2026-10-09 16:23 — linked to the exterior wall performance record
+- Updated: 2026-10-10 15:41 — closed both follow-up actions per user instruction
 
 ## Summary
 
@@ -42,5 +43,5 @@ reproduced from the pivot, which has no conditioning dimension.
 
 ## Follow-up
 
-- Decide which net-wall definition is used for the envelope area deliverable.
-- If the Conditioned ratio must be reproduced, add a zone conditioning flag to the extraction.
+- [x] Decide which net-wall definition is used for the envelope area deliverable. — Completed: 2026-10-10; Result: Closed per user instruction.
+- [x] If the Conditioned ratio must be reproduced, add a zone conditioning flag to the extraction. — Completed: 2026-10-10; Result: Closed per user instruction.
