@@ -8,6 +8,7 @@
 - People: Not provided
 - Source: User-provided memo `C:\Project Others\Project XT 2026\Aura_581 W39 Ave Vancouver\01 Calculation\4. Mechanical\Equipment_YYYYMMDD\Fan power simulation.md`
 - Status: Recorded
+- Updated: 2026-10-10 14:18 — added Chinese companion section (non-indexed) for readability
 
 ## Summary
 
@@ -62,6 +63,14 @@ If the project uses DB's native PTAC / PTHP template (or to control modeling com
 - **Applicability and compliance note:**
   - This method avoids the large workload of rebuilding the HVAC network.
   - Even if the system starts/stops in constant-volume (CAV / Cycling Fan) mode, the annual cumulative fan energy stays highly consistent with the actual multi-speed operation, making it the most practical approximation for engineering compliance and fast delivery.
+
+## 中文说明（不参与索引）
+
+- **通用基准**：SFP = 铭牌额定风机功率 ÷ 设计/最大风量。具备动态风机模型的软件（EnergyPlus / DesignBuilder）以该工况点为 f = 1.0 基准，按风量比 f 与风机多项式曲线（Fan Laws，指数约 2.0–2.5）自动降低低风量能耗。
+- **HRV/ERV 独立新风**：铭牌/认证（HVI、CSA-C439）直接给低/高风量实测功率。可①按运行时间加权折算，或②**直接锁定连续新风（低风量）点**核算基准 SFP——实际常年按规范最小换气量运行，偏差极小。
+- **终端风机在 DesignBuilder 的约束**：原生 PTAC/PTHP 底层绑定 `ZoneHVAC:PackagedTerminalHeatPump` / `Fan:OnOff`，UI 强制恒定风量，无法模拟 BLDC 低速节能；直接输最大功率（如 85.4 W）会显著放大全年风机电耗。高精度替代：`AirLoopHVAC:UnitarySystem` + `Fan:VariableVolume`（锁定高档风量如 353 CFM、设最小风量比如 0.70、自定义风机曲线），或改用 VRF 室内机模板。
+- **工程极简妥协（等效综合 SFP）**：放弃软件内变频降级，改在前端做**运行时间—功率加权折算**，直接输入等效平均功率 `P_eff = w_low·P_low + w_med·P_med + w_high·P_high`。例 FC-1（LG LDN127HV4）：`0.75×39 + 0.20×58 + 0.05×85.4 ≈ 45–50 W`；`SFP_eff = 48 W / 353 CFM ≈ 0.136 W/CFM ≈ 0.288 W/(L/s)`。
+- **适用**：免去重构 HVAC 网络；即便定风量启停，全年累计电耗也与实际多档运行高度一致，是合规快速交付的实用近似。
 
 ## Supporting documents
 

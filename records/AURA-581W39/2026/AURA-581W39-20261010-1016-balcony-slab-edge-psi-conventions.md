@@ -8,6 +8,7 @@
 - People: Not provided
 - Source: User-provided learning note `C:\Users\jesso\Downloads\Balcony_Slab_Edge_Psi_Learning_Notes.md`; BC Building Envelope Thermal Bridging Guide; BC Housing 2024 guide; ThermalEnvelope.ca data sheets
 - Status: Recorded
+- Updated: 2026-10-10 14:18 — added Chinese companion section (non-indexed) for readability
 
 Units: all linear thermal transmittance Psi values are Btu/(h·ft·°F); all area U-values are Btu/(h·ft²·°F).
 
@@ -65,6 +66,16 @@ These catalog nodes use sliding doors; the project drawing is a low-threshold sw
 It is not accurate to say the guide "does not explain at all": the *Dealing with Floor to Ceiling Glazing* section clearly states that there is no opaque clear field, the two calculation methods, and that the slab area must be excluded when using the full linear value. **The currently accessible 9.1.3 PDF footnote states that its Psi is not referenced to an opaque-wall clear field and points to that section; the newer 9.1.26 PDF has a similar footnote.** However, a single PDF footnote does not directly give the operation "if the energy model is already built full-height with spandrel panels, how much already-counted U×A to deduct", nor does it prominently flag beside the catalog value whether the slab projected area is included. For an energy modeler who builds spandrels full-height, this still easily causes misreading or double counting. The assessment should be: **it states the convention and reading clues, but the warnings are not prominent enough and the model mapping must still be done by the user** — not "no explanation" nor "fully fixed after 2024".
 
 **Minimum check before using a catalog value:** which clear field did this Psi subtract? which area's U×A has the model already counted? are the door sill/head already included? Only after the three are aligned, add Psi × L.
+
+## 中文说明（不参与索引）
+
+- **核心**：不能只看 Ψ 数值判断阳台热桥；先看目录节点的 **reference assembly、扣掉的 clear-field 传热、以及楼板/curb 投影面积是否已含在 Ψ 里**。数值高低是识别两种口径的线索，不是固定分界线。
+- **两种口径**：①以 opaque clear wall 为基准的**附加**传热（如 9.1.19 Ψ = 0.458、9.1.21 Ψ = 0.218）；②落地玻璃之间、**未扣 slab/curb 面积**的线性值（如 9.1.3 Ψ = 0.974、9.1.26 Ψ = 0.728），后者不能按 opaque wall clear field 解读。
+- **量级核对**：9.1.3 的 0.832 × 14/12 ≈ 0.971 ≈ 0.974；9.1.26 的 1.09 × 8/12 ≈ 0.727 ≈ 0.728。仅用于理解量级，不是通用反推公式。
+- **为何这样定义**：BC 指南 *Dealing with Floor to Ceiling Glazing* 指出楼板两侧皆玻璃、无 opaque clear wall 可比，故扣掉上下玻璃、把剩余 slab/curb 传热按板边长度报告，并给出 U-value 与 without-area 两条路径。2024 BC Housing 指南给出更可拆分的取量示例，但未宣布旧节点失效，网站仍并存不同版本/口径。
+- **已建 spandrel 面板如何避免 double counting**：`Ψ应添加 = Ψ目录 − U模型,panel × A重叠 / L`（without-area 情形）；以 clear wall 为基准时通式为 `Ψ目录 + (U目录参考墙 − U模型panel) × A重叠 / L`。不能既保留该带的 panel U×A 又完整叠加 without-area Ψ；软件已显式模拟 2D/3D 节点时不得再加。
+- **本项目估算**：成对 9.1.19/9.1.21，取门槛、门头各占板根长度 1/3——有隔热 `0.218 + (0.065 + 0.162)/3 ≈ 0.29`、无隔热 `0.458 + (0.065 + 0.162)/3 ≈ 0.53`；目录门为推拉门、项目为低门槛平开门且隔热件未定，**并非产品认证值**。9.1.3 的 0.974 口径不同，不可直接替换或评判此 W3 估算。
+- **评价**：指南有口径说明与阅读线索，但提示不够醒目、模型映射仍需使用者自行完成，既非“无解释”也非“2024 后已全面改好”。使用目录值前最短核对：这个 Ψ 减掉了哪块 clear field？模型已计入哪块 U×A？sill/head 是否已含？
 
 ## Supporting documents
 
